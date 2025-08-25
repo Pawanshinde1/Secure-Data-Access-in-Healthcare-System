@@ -1,0 +1,123 @@
+-- MySQL Administrator dump 1.4
+--
+-- ------------------------------------------------------
+-- Server version	5.0.22-community-nt
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+
+--
+-- Create schema healthcare
+--
+
+CREATE DATABASE /*!32312 IF NOT EXISTS*/ healthcare;
+USE healthcare;
+
+--
+-- Table structure for table `healthcare`.`doctor_registration_info`
+--
+
+DROP TABLE IF EXISTS `doctor_registration_info`;
+CREATE TABLE `doctor_registration_info` (
+  `name` varchar(45) NOT NULL default '',
+  `mobile_number` varchar(10) NOT NULL default '',
+  `email_id` varchar(45) NOT NULL default '',
+  `register_number` varchar(45) NOT NULL default '',
+  `specility` varchar(45) NOT NULL default '',
+  `year_of_experience` varchar(45) NOT NULL default '',
+  `username` varchar(45) NOT NULL default '',
+  `password` varchar(45) NOT NULL default '',
+  PRIMARY KEY  (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `healthcare`.`doctor_registration_info`
+--
+
+/*!40000 ALTER TABLE `doctor_registration_info` DISABLE KEYS */;
+INSERT INTO `doctor_registration_info` (`name`,`mobile_number`,`email_id`,`register_number`,`specility`,`year_of_experience`,`username`,`password`) VALUES 
+ ('Dhanraj','1234567890','dhanraj@gmail.com','45','Dentists','5','Dhanraj','1002'),
+ ('janhvi','9699329227','janhvi@gmail.com','106','audiologists','5','janhvi','2106049'),
+ ('Jay Shinge','9158486392','jayshinge@gmail.com','12345','Dentists','4','Jay Shinge','Jay@123'),
+ ('Swapnali','9049497000','Swapnali@gmail.com','111','audiologists','5','Swapnali','12345');
+/*!40000 ALTER TABLE `doctor_registration_info` ENABLE KEYS */;
+
+
+--
+-- Table structure for table `healthcare`.`patient_disease_info`
+--
+
+DROP TABLE IF EXISTS `patient_disease_info`;
+CREATE TABLE `patient_disease_info` (
+  `name` varchar(45) NOT NULL default '',
+  `age` varchar(45) NOT NULL default '',
+  `gender` varchar(45) NOT NULL default '',
+  `address` varchar(45) NOT NULL default '',
+  ` disease` varchar(45) NOT NULL default '',
+  `symptoms` varchar(100) NOT NULL default '',
+  `medication` varchar(100) NOT NULL default '',
+  `suggestion` varchar(100) NOT NULL default '',
+  PRIMARY KEY  (`name`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `healthcare`.`patient_disease_info`
+--
+
+/*!40000 ALTER TABLE `patient_disease_info` DISABLE KEYS */;
+INSERT INTO `patient_disease_info` (`name`,`age`,`gender`,`address`,` disease`,`symptoms`,`medication`,`suggestion`) VALUES 
+ ('Prachi Bhagat','18','Female','Alandi','Low Sugar','Blindness,Headache,Weakness','Eat medicines and eat some sweets when feeling low','Take tablets on time.'),
+ ('sagar','20','Male','kothrud pune','cold','headaches.\nmuscle aches','D Cold Total Tablet','Take Steam two time in a day'),
+ ('Tejas Sawant','18','Male','Karvenagar','diabeties','weakness','sadsdf',''),
+ ('Yashraj Sanas','18','Male','Pune','diabeaties','weakness','take medicines as per the suggestion of doctor','go to the hospital');
+/*!40000 ALTER TABLE `patient_disease_info` ENABLE KEYS */;
+
+
+--
+-- Table structure for table `healthcare`.`registration_info`
+--
+
+DROP TABLE IF EXISTS `registration_info`;
+CREATE TABLE `registration_info` (
+  `name` varchar(45) NOT NULL default '',
+  `mobile_number` varchar(45) NOT NULL default '',
+  `email` varchar(45) NOT NULL default '',
+  `gender` varchar(100) NOT NULL default '',
+  `age` varchar(45) NOT NULL default '',
+  `address` varchar(45) NOT NULL default '',
+  `username` varchar(45) NOT NULL default '',
+  `password` varchar(45) NOT NULL default '',
+  PRIMARY KEY  (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `healthcare`.`registration_info`
+--
+
+/*!40000 ALTER TABLE `registration_info` DISABLE KEYS */;
+INSERT INTO `registration_info` (`name`,`mobile_number`,`email`,`gender`,`age`,`address`,`username`,`password`) VALUES 
+ ('Pawan Shinde','7218396553','shindepawan333@gmail.com','Male','18','Ahmednagar','Pawan','1800'),
+ ('Prachi Bhagat','8799936244','prachibhagat2005@gmail.com','Female','18','Alandi','Prachi','1212'),
+ ('sagar','9075384126','sagar12@gmail.com','Male','20','kothrud pune','sagar12','1313'),
+ ('Sonali','3456789012','soni12@gmail.com','Female','18','Pune','soni','1111'),
+ ('Sushil Giri','9689903971','girisushil2005@gmail.com','Male','18','pune','Sushil','5678'),
+ ('Tejas Sawant','9552382219','tejassawant674@gmail.com','Male','18','Karvenagar','Tejas','2106172'),
+ ('Yashraj Sanas','9529889864','yashrajsanas23@gmail.com','Male','18','Pune','Yash','1234'),
+ ('shreya chavan','8237868748','shreyanchavan135@gmail.com','Female','18','Hadapsar,Pune-411028.','Yash123','s123');
+/*!40000 ALTER TABLE `registration_info` ENABLE KEYS */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
