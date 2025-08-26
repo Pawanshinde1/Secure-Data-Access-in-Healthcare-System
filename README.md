@@ -1,10 +1,10 @@
 Secure-Data-Access-in-Healthcare-System
 
-📝 About the Project
-This is a Project developed in NetBeans using Java and MySQL.
-The project ensures secure storage and transfer of medical data between patients and doctors. 
-Patients can encrypt and decrypt their health information for privacy, while doctors can securely share patient records with other authorized doctors.
-This promotes confidentiality, integrity, and secure communication in healthcare.
+📝 About the Project<br>
+This is a Project developed in NetBeans using Java and MySQL.<br>
+The project ensures secure storage and transfer of medical data between patients and doctors. <br>
+Patients can encrypt and decrypt their health information for privacy, while doctors can securely share patient records with other authorized doctors. <br>
+This promotes confidentiality, integrity, and secure communication in healthcare.<br>
 
 🚀 Features<br>
 ✅ User Authentication – Secure login and account management <br>
