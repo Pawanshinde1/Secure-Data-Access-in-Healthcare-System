@@ -6,7 +6,7 @@ The project ensures secure storage and transfer of medical data between patients
 Patients can encrypt and decrypt their health information for privacy, while doctors can securely share patient records with other authorized doctors.
 This promotes confidentiality, integrity, and secure communication in healthcare.
 
-🚀 Features
+🚀 Features<br>
 ✅ User Authentication – Secure login and account management
 ✅ Two Panels – Doctor Panel and Patient Panel
 ✅ Data Encryption & Decryption – Patients can secure their medical records
