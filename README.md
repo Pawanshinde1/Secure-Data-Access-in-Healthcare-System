@@ -26,7 +26,7 @@ Follow these steps to run the project on your local machine:
 
 1️⃣ Clone the repository:
 
-git clone https://github.com/username/Secure-Data-Access-in-Healthcare-System.git
+git clone https://github.com/PawanShinde1/Secure-Data-Access-in-Healthcare-System.git
 
 
 2️⃣ Open the project in NetBeans IDE.
