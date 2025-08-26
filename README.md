@@ -7,19 +7,19 @@ Patients can encrypt and decrypt their health information for privacy, while doc
 This promotes confidentiality, integrity, and secure communication in healthcare.
 
 🚀 Features<br>
-✅ User Authentication – Secure login and account management
-✅ Two Panels – Doctor Panel and Patient Panel
-✅ Data Encryption & Decryption – Patients can secure their medical records
-✅ Secure Data Sharing – Doctors can forward patient information to other doctors safely
-✅ Access Control – Only authorized users can access or share sensitive data
-✅ Database Management – Medical data stored securely in MySQL
+✅ User Authentication – Secure login and account management <br>
+✅ Two Panels – Doctor Panel and Patient Panel <br>
+✅ Data Encryption & Decryption – Patients can secure their medical records <br>
+✅ Secure Data Sharing – Doctors can forward patient information to other doctors safely <br>
+✅ Access Control – Only authorized users can access or share sensitive data <br>
+✅ Database Management – Medical data stored securely in MySQL <br>
 
-🛠️ Technologies Used
-🔹 Java (Core + Advanced) ☕ – Backend logic and application development
-🔹 NetBeans IDE 💻 – Development environment
-🔹 MySQL 🗄️ – Database for storing medical records securely
-🔹 JDBC 🔗 – Database connectivity
-🔹 Cryptography Libraries 🔐 – Encryption & decryption of sensitive data
+🛠️ Technologies Used<br>
+🔹 Java (Core + Advanced) ☕ – Backend logic and application development <br>
+🔹 NetBeans IDE 💻 – Development environment <br>
+🔹 MySQL 🗄️ – Database for storing medical records securely <br>
+🔹 JDBC 🔗 – Database connectivity <br>
+🔹 Cryptography Libraries 🔐 – Encryption & decryption of sensitive data <br>
 
 📂 Project Setup
 Follow these steps to run the project on your local machine:
